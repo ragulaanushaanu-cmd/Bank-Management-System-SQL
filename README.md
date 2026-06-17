@@ -3,7 +3,8 @@
 A FastAPI-based Bank Management System API with JWT Authentication, User Management, and Banking Operations like Deposit, Withdraw, and Transaction Tracking.
 
 ---
-
+## 🚀 Overview
+This project is a beginner-friendly backend API for banking operations built using FastAPI and MySQL.
 # ✨ Features
 
 ## 🔐 Authentication
@@ -41,14 +42,14 @@ A FastAPI-based Bank Management System API with JWT Authentication, User Managem
 # 📁 Project Structure
 Bank-Management-System-SQL/
 │
-├── main.py
-├── models.py
-├── schemas.py
-├── auth.py
-├── security.py
-├── database.py
-├── requirements.txt
-└── README.md
+  main.py
+  models.py
+  schemas.py
+  auth.py
+  security.py
+  database.py
+  requirements.txt
+  README.md
 
 ---
 
@@ -56,7 +57,7 @@ Bank-Management-System-SQL/
 
 ## Clone Repository
 ```bash
-git clone https://github.com/yourusername/Bank-Management-System-SQL.git
+git clone https://github.com/ragulaanushaanu-cmd/Bank-Management-System-SQL.git
 cd Bank-Management-System-SQL
 python -m venv .venv
 .venv\Scripts\activate
