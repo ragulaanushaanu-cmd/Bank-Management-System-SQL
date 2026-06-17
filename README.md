@@ -39,4 +39,69 @@ A FastAPI-based Bank Management System API with JWT Authentication, User Managem
 ---
 
 # 📁 Project Structure
+Bank-Management-System-SQL/
+│
+├── main.py
+├── models.py
+├── schemas.py
+├── auth.py
+├── security.py
+├── database.py
+├── requirements.txt
+└── README.md
 
+---
+
+# ⚙️ Installation
+
+## Clone Repository
+```bash
+git clone https://github.com/yourusername/Bank-Management-System-SQL.git
+cd Bank-Management-System-SQL
+python -m venv .venv
+.venv\Scripts\activate
+Install Dependencies
+pip install -r requirements.txt
+Configure Database
+
+Create .env file:
+
+DB_USER=root
+DB_PASSWORD=yourpassword
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=bank_db
+
+SECRET_KEY=your_secret_key
+ALGORITHM=HS256
+
+Run Project
+uvicorn main:app --reload
+🌐 API URLs
+Home: http://127.0.0.1:8000
+Swagger Docs: http://127.0.0.1:8000/docs
+🔗 API Endpoints
+Authentication
+Method	Endpoint
+POST	/register
+POST	/login
+Banking
+Method	Endpoint
+POST	/deposit
+POST	/withdraw
+GET	/balance
+GET	/transactions
+User
+Method	Endpoint
+GET	/profile
+PUT	/profile
+📊 Example Response
+{
+  "account_number": 101,
+  "balance": 5000,
+  "status": "active"
+}
+👨‍💻 Author
+
+Anusha Ragula
+Backend Developer | Python | FastAPI | MySQL
