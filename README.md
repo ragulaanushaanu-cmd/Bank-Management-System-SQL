@@ -39,17 +39,14 @@ This project is a beginner-friendly backend API for banking operations built usi
 
 ---
 
-# 📁 Project Structure
-Bank-Management-System-SQL/
-│
-├── main.py
-├── models.py
-├── schemas.py
-├── auth.py
-├── security.py
-├── database.py
-├── requirements.txt
-└── README.md
+📁 Project Structure
+main.py → Entry point
+models.py → Database models
+schemas.py → Request/response validation
+auth.py → Authentication logic
+security.py → Password hashing & JWT
+database.py → Database connection
+requirements.txt → Dependencies
 
 ---
 
