@@ -1,13 +1,4 @@
-# Virtual Environment
 .venv/
-venv/
-
-# Python
 __pycache__/
 *.pyc
-
-# VS Code
-.vscode/
-
-# Environment Variables
 .env
