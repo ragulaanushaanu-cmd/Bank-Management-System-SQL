@@ -1,105 +1,105 @@
 # 🏦 Bank Management System API
 
-A FastAPI-based Bank Management System API with JWT Authentication, User Management, and Banking Operations like Deposit, Withdraw, and Transaction Tracking.
+A FastAPI-based Bank Management System API with JWT authentication and MySQL database.
 
 ---
-## 🚀 Overview
-This project is a beginner-friendly backend API for banking operations built using FastAPI and MySQL.
-# ✨ Features
 
-## 🔐 Authentication
+## 🚀 Overview
+
+This is a beginner-friendly backend project for banking operations using FastAPI and MySQL.
+
+---
+
+## ✨ Features
+
+### Authentication
 - User Registration
 - User Login
-- JWT Token Authentication
-- Password Hashing using bcrypt
+- JWT Authentication
+- Password Hashing
 
-## 👤 User Features
+### User Features
 - View Account Details
 - Deposit Money
 - Withdraw Money
-- View Transaction History
+- View Transactions
 - Check Balance
 
-## 🏦 Banking Features
+### Banking Features
 - Create Bank Account
-- Update Account Details
+- Update Account
 - Transaction Tracking
-- Secure Balance Management
+- Secure Balance Handling
 
 ---
 
-# 🧰 Tech Stack
+## 🧰 Tech Stack
 - Python
 - FastAPI
-- SQLAlchemy
 - MySQL
-- JWT Authentication
+- SQLAlchemy
+- JWT
 - Passlib (bcrypt)
-- Pydantic
 
 ---
 
-📁 Project Structure
-main.py → Entry point
-models.py → Database models
-schemas.py → Request/response validation
-auth.py → Authentication logic
-security.py → Password hashing & JWT
-database.py → Database connection
-requirements.txt → Dependencies
+## 📁 Project Structure
+
+- main.py → Entry point
+- models.py → Database models
+- schemas.py → Validation
+- auth.py → Login/Register logic
+- security.py → Password hashing + JWT
+- database.py → DB connection
+- requirements.txt → Dependencies
 
 ---
 
-# ⚙️ Installation
+## ⚙️ Installation
 
-## Clone Repository
-```bash
+Clone repo:
 git clone https://github.com/ragulaanushaanu-cmd/Bank-Management-System-SQL.git
+
 cd Bank-Management-System-SQL
+
+Create virtual environment:
 python -m venv .venv
 .venv\Scripts\activate
-Install Dependencies
+
+Install dependencies:
 pip install -r requirements.txt
-Configure Database
 
-Create .env file:
-
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_HOST=localhost
-DB_PORT=3306
-DB_NAME=bank_db
-
-SECRET_KEY=your_secret_key
-ALGORITHM=HS256
-
-Run Project
+Run server:
 uvicorn main:app --reload
-🌐 API URLs
-Home: http://127.0.0.1:8000
-Swagger Docs: http://127.0.0.1:8000/docs
-🔗 API Endpoints
-Authentication
-Method	Endpoint
-POST	/register
-POST	/login
-Banking
-Method	Endpoint
-POST	/deposit
-POST	/withdraw
-GET	/balance
-GET	/transactions
-User
-Method	Endpoint
-GET	/profile
-PUT	/profile
-📊 Example Response
-{
-  "account_number": 101,
-  "balance": 5000,
-  "status": "active"
-}
-👨‍💻 Author
 
-Anusha Ragula
+---
+
+## 🌐 API URLs
+
+- Home: http://127.0.0.1:8000  
+- Docs: http://127.0.0.1:8000/docs  
+
+---
+
+## 🔗 API Endpoints
+
+### Authentication
+- POST /register
+- POST /login
+
+### Banking
+- POST /deposit
+- POST /withdraw
+- GET /balance
+- GET /transactions
+
+### User
+- GET /profile
+- PUT /profile
+
+---
+
+## 👨‍💻 Author
+
+Anusha Ragula  
 Backend Developer | Python | FastAPI | MySQL
